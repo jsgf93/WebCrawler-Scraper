@@ -1,6 +1,6 @@
 package process.services;
 
-public class Convertion {
+public class Conversion {
 	
 	private int number;
 	

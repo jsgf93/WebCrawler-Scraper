@@ -11,7 +11,7 @@ public class StoreDocument {
 	 * This method gets the content of the web's HTML, stores it in a Document object and returns it.
 	 * Allowing us to parse the object obtained with the JSoup libraries in the future.
 	 * @param url
-	 * @return HTML doc
+	 * @return HTMLdoc
 	 */
 	
 	public Document getHtml(String url) {

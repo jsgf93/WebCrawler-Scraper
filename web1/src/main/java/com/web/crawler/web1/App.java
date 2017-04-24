@@ -18,6 +18,8 @@ public class App
 	
 	public static final String url = "https://news.ycombinator.com/";
 	
+	public  int param1;
+	
     public static void main( String[] args ) {
     	
     	// Instantiate classes
@@ -25,7 +27,7 @@ public class App
     	StoreDocument store = new StoreDocument();
     	Entry[] entry = new Entry[30];
     	WordCounter counter = new WordCounter();
-    	Convertion convert = new Convertion();
+    	Conversion convert = new Conversion();
     	
     	// Check the response with the connection status code obtained from the HTTP request.
     	if (request.getStatus(url) == 200) {
@@ -86,6 +88,7 @@ public class App
     				k++;
     			}		
     		}
+    		
     		int[][] firstArray = new int[j][2];
     		int[][] secondArray = new int[k][2];
     		j = 0;
@@ -103,7 +106,7 @@ public class App
     			}
     		}
     		
-			//Continuing with the filtering operation number one, now we have to sort by number of comments 
+    		//Continuing with the filtering operation number one, now we have to sort by number of comments 
     		//of the filtered entries, from highest to lowest.
     		Arrays.sort(firstArray, (a, b) -> Integer.compare(b[1], a[1]));
     		System.out.println("\n**************************************************\n");
@@ -124,6 +127,5 @@ public class App
     	}else
     				System.out.println("The connection status code is not OK, the response is: "+request.getStatus(url));		
     }
-
 }
 
