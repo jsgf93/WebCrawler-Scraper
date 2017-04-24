@@ -18,7 +18,7 @@ public class HTTPRequest {
 	* 		404 Not Found			500 Internal Server Error
 	* 		502 Bad Gateway			503 Service Unavailable
 	* @param url
-	* @return status Code
+	* @return statusCode
 	*/
 	
 	public int getStatus(String url) {

@@ -1,9 +1,13 @@
 package process.services;
 
 public class WordCounter {
-	 //allows expressions like alphanumeric, some abbreviations 
-		//and expressions with two or more characters. Almost all kind of words.
 	
+	/**
+	 * This method counts the words that a string has. Allows alphanumeric expressions, some abbreviations 
+	 * and expressions with two or more characters. Almost all kind of words, it depends on the regex used.
+	 * @param string
+	 * @return numberWords
+	 */
 	public int count(String string) {
 	    int numberWords = 0;
 	    String[] words = string.split("\\s+");
